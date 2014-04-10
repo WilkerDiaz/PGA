@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory name="">
+  <property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
+  <property name="hibernate.connection.password">compiere</property>
+  <property name="hibernate.connection.url">jdbc:oracle:thin:@192.168.140.66:1521:xe</property>
+  <property name="hibernate.connection.username">compiere</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+  <property name="hibernate.current_session_context_class">thread</property>
+  <property name="connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property>
+  <property name="c3p0.acquire_increment">1</property>
+  <property name="c3p0.idle_test_period">100</property>
+  <property name="c3p0.max_size">20</property>
+  <property name="c3p0.max_statements">100</property>
+  <property name="c3p0.min_size">3</property>
+  <property name="c3p0.timeout">100</property>
+  <property name="hibernate.default_schema">COMPIERE</property>
+  <mapping class="com.abc.ws.bean.XxWabProductinfo" resource="com/abc/ws/bean/XxWabProductinfo.hbm.xml"/>
+  <mapping class="com.abc.ws.bean.XxWabClassinfo" resource="com/abc/ws/bean/XxWabClassinfo.hbm.xml"/>
+  <mapping class="com.abc.ws.bean.XxWabTrendset" resource="com/abc/ws/bean/XxWabTrendset.hbm.xml"/>
+  <mapping class="com.abc.ws.bean.XxWabTrendsetProduct" resource="com/abc/ws/bean/XxWabTrendsetProduct.hbm.xml"/>
+  <mapping class="com.abc.ws.bean.XxWabComplementtype" resource="com/abc/ws/bean/XxWabComplementtype.hbm.xml"/>
+  <mapping class="com.abc.ws.bean.XxWabComplement" resource="com/abc/ws/bean/XxWabComplement.hbm.xml"/>
+  <mapping class="com.abc.ws.bean.XxWabHomepage" resource="com/abc/ws/bean/XxWabHomepage.hbm.xml"/>
+  <mapping class="com.abc.ws.bean.XxWabCostumerservice" resource="com/abc/ws/bean/XxWabCostumerservice.hbm.xml"/>
+ </session-factory>
+</hibernate-configuration>

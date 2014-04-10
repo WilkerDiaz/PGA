@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 22/01/2014 12:04:39 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.abstracta.bean.WishListLine" table="WISH_LIST_LINE">
+        <id name="wishListLineId" type="int">
+            <column name="WISH_LIST_LINE_ID" />
+            <generator class="sequence"><param name="sequence">WISHLISTLINE_SEQ</param></generator>
+        </id>
+        <property name="wishListId" type="int">
+            <column name="WISH_LIST_ID" />
+        </property>
+        <property name="productId" type="int">
+            <column name="PRODUCT_ID" />
+        </property>
+        <property name="created" type="timestamp">
+            <column name="CREATED" />
+        </property>
+        <property name="movedToCart" type="char">
+            <column name="MOVED_TO_CART" />
+        </property>
+        <property name="dateMovedToCart" type="timestamp">
+            <column name="DATE_MOVED_TO_CART" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,1465 @@
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html,
+body {
+  font-size: 100%; }
+  
+.width1000Center {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 0;
+	text-align: left
+}
+  
+body {
+  background: white;
+  color: #222222;
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica", Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  position: relative;
+  cursor: default; 
+}
+
+#socialPost {
+  margin-left: 40px;
+  float: left;
+} 
+ 
+input {
+	padding: 2px;
+	width: 20%;
+	margin: 2px 0 0
+}
+
+.height10{
+  	height: 10px;
+} 
+
+.bodySpace100{
+  	padding-bottom: 94px;
+  	margin-left: 15%;
+}  
+  
+ .bodySpace200{
+  	padding-bottom: 200px;
+  	margin-left: 15%;
+  }
+  
+   .bodySpace400{
+  	padding-bottom: 400px;
+  	margin-left: 15%;
+  }
+  
+  .bodySpace500{
+  	padding-bottom: 500px;
+  	margin-left: 15%;
+  }
+  
+  .marginLeft200{
+  	margin-left: 200px;;
+  }
+  
+  .decoLine {
+
+  width: 1100px;
+  margin: 0 auto;
+  padding: 0;
+  
+  -webkit-box-shadow: 0 8px 6px -6px grey;
+	   -moz-box-shadow: 0 8px 6px -6px grey;
+	        box-shadow: 0 8px 6px -6px grey;
+  }
+  
+span.productName
+{
+	color: black;
+	float: left;
+	font: 12px/16px Helvetica, Arial, sans-serif;
+	margin: 0;
+	font-weight: bold;
+}
+
+span.regPrice
+{
+font: bold 12px/15px Helvetica, Arial, sans-serif;
+color: grey;
+}
+
+  .interSpace100{
+  	padding-bottom: 100px;
+  }
+  
+  .interSpace10{
+  	padding-bottom: 10px;
+  }
+  
+  /* Add Item Page  */
+  .addedItem{
+  	color: #2ba6cb;
+  	text-transform: lowercase;
+  	line-height: 0.1px;
+  	margin-bottom: 40px;
+  }
+  .addedItemName{
+  	text-transform: lowercase;
+  	color: rgb(126, 126, 126);
+  	font-weight:bold;
+  	font-size: 0.9em;
+  }
+  
+  .addedItemprice{
+  	line-height: 0.1px;
+  	color: rgb(126, 126, 126);
+  	font-size: 0.9em;
+  }
+  
+  .showRoomName{
+  	text-transform: lowercase;
+  	color: rgb(126, 126, 126);
+  	font-weight:bold;
+  	line-height: 0.2em;
+  	font-size: 0.9em;
+  }
+  
+  a>span.showRoomName:hover{
+	color: #2ba6cb;
+  }
+  
+  .showRoomPrice{
+  	color: rgb(126, 126, 126);
+  	text-transform: none;
+  	line-height: 1.6em;
+  	font-size: 0.9em;
+  }
+  
+  .showRoomOrigPrice{
+  	color: rgb(126, 126, 126);
+  	font-size: 0.8em;
+  	text-decoration: line-through;
+  }
+  
+  .showRoomPromoPrice{
+  	color: #2ba6cb;
+  	font-weight: bold;
+  	line-height: 1.6em;
+  	font-size: 0.9em;
+  }
+  
+  .productOrigPrice{
+  	color: rgb(126, 126, 126);
+  	font-size: 0.6em;
+  }
+  
+  .productPromoPrice{
+  	color: #2ba6cb;
+  	font-weight: bold;
+  }
+  
+  .carouselPromoPrice{
+  	color: #2ba6cb;
+  	font-size: 0.9em;
+  }
+  
+  .carouselOrigPrice{
+  	font-size: 0.7em;
+  	color: rgb(126, 126, 126);
+  	text-decoration: line-through;
+  }
+  
+  .carouselPrice{
+  	font-size: 0.9em;
+  	color: rgb(126, 126, 126);
+  	padding: 0;
+  	margin: 0;
+  }
+  
+.carouselName{
+  	color: black;
+	float: left;
+	font: 12px/16px Helvetica, Arial, sans-serif;
+	margin: 0;
+	font-weight: bold;
+	text-transform: lowercase;
+}
+  
+button.noSize, .button.noSize {
+	width: 100%;
+}
+  
+.search{
+background-image: url(icons/search-icon-white.png);
+background-repeat: no-repeat;
+background-position: center;
+padding-left: 10px;
+}
+ 
+.one-edge-shadow {
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}
+
+.footerWrapper{
+ width: 1000px;
+ }
+  
+.headerWrapper span.cartIcon {
+  background:url(icons/cart.png);
+  background-size: 40px 40px;
+  background-repeat:no-repeat;
+  }
+
+.panel.violet {
+  background: #6f62aa;
+  height: 220px;
+  color: #fff;
+  line-height: 0.1px;}
+  
+.panel.green {
+  background: #2ba796;
+  height: 220px;
+  line-height: 0.1px;}
+  
+.main-footer-bottom {
+  background: #000000;
+  padding: 24px 0 10px; }
+
+.main-footer-bottom .design-border {
+  border-bottom: 1px solid #484848;
+  padding-bottom: 5px;
+  margin-bottom: 25px; }
+
+.main-footer-bottom a.footer-logo {
+  color: #fff;
+  font-weight: normal;
+  background: url("icons/footer-icons.png") no-repeat 0 3px;
+  padding: 25px 0 0 0;
+  font-size: 1em;
+  display: inline-block;
+  font-family: "Helvetica", Helvetica, "Helvetica Neue", Arial, sans-serif;
+  width: 100px; }
+
+.main-footer-bottom a.footer-logo:hover {
+  opacity: 0.8; }
+
+.main-footer-bottom ul.footer-links {
+  margin: 0;
+  display: inline-block; }
+
+.main-footer-bottom ul.footer-links li {
+  display: block;
+  float: left;
+  margin-left: 6px;
+  font-family: "Helvetica", Helvetica, "Helvetica Neue", Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 13px; }
+
+.main-footer-bottom ul.footer-links li a {
+  color: #fff;
+  padding: 3px 6px; }
+
+.main-footer-bottom ul.footer-links li a:hover {
+  color: #fff; }
+
+.main-footer-bottom p.copyright {
+  margin: 6px 0 0;
+  font-size: 12px;
+  color: #fff; }
+
+.main-footer-bottom ul.home-social {
+  display: block;
+  float: right;
+  margin-bottom: 8px; }
+
+.main-footer-bottom ul.home-social li {
+  list-style: none;
+  display: block;
+  float: left;
+  margin-left: 10px; }
+
+.main-footer-bottom ul.home-social li:first-child {
+  margin-left: 0; }
+
+.main-footer-bottom ul.home-social li a {
+  display: block;
+  height: 50px;
+  width: 50px;
+  background: url("icons/social.png") no-repeat center 0; }
+
+.main-footer-bottom ul.home-social li a:hover {
+  opacity: 0.8; }
+
+.main-footer-bottom ul.home-social li a.twitter {
+  background-position: center 0; }
+
+.main-footer-bottom ul.home-social li a.facebook {
+  background-position: center -200px; }
+
+.main-footer-bottom ul.home-social li a.mail {
+  background-position: center -400px; }
+  
+.cartIcon {
+  display: block;
+  height: 30px;
+  width: 30px;
+  background: url("icons/cart.png") no-repeat center 0;}
+  
+/* Some stylesheet reset */
+#floating-menu > ul { 
+  list-style: none;  
+  background-color: #fff;
+  clear: none;
+  float: left;
+  opacity: .8;
+  padding: 0;
+  width: 200px;
+}
+
+/* The container */
+#floating-menu > ul {
+  display: block;
+  position: absolute;
+  width: 160px;
+  z-index:90;
+}
+
+/* The list elements which contain the links */
+#floating-menu > ul li {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  
+  
+}
+
+/* General link styling */
+#floating-menu > ul li a {
+  /* Layout */
+
+  display: block;
+  position: relative;
+  margin: 0;
+  border-top: 1px dotted #fff;
+  border-bottom: 1px dotted #d9d9d9;
+  padding: 6px 20px;
+  /* Typography */
+
+  font-family: "Helvetica", Helvetica, "Helvetica Neue", Arial, sans-serif;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  /*text-transform: uppercase;*/
+  text-shadow: 0 1px 0 #fff;
+  font-size: 13px;
+  /* Background & effects */
+
+  border-left: 1px dotted #d9d9d9;
+  border-right: 1px dotted #d9d9d9;
+  background: white;
+}
+
+/* The hover state of the menu/submenu links */
+#floating-menu > ul li a:hover,
+#floating-menu > ul li:hover > a {
+  color: #ffffff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  background: black;
+  background: -webkit-linear-gradient(#2c2c2c, grey);
+  background: -moz-linear-gradient(#2c2c2c, grey);
+  background: linear-gradient(#2c2c2c, grey);
+  border-color: transparent;
+}
+/* The arrow indicating a submenu */
+#floating-menu > ul .has-sub > a::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 0px;
+  height: 0px;
+  /* Creating the arrow using borders */
+
+  color: black;
+  border: 4px solid transparent;
+  border-left: 4px solid black;
+}
+/* The same arrow, but with a darker color, to create the shadow effect */
+#floating-menu > ul .has-sub > a::before {
+  content: '';
+  position: absolute;
+  top: 14px;
+  right: 10px;
+  width: 0px;
+  height: 0px;
+  /* Creating the arrow using borders */
+
+  border: 4px solid transparent;
+  border-left: 4px solid #fff;
+}
+/* Changing the color of the arrow on hover */
+#floating-menu > ul li > a:hover::after,
+#floating-menu > ul li:hover > a::after {
+  border-left: 4px solid #fff;
+}
+#floating-menu > ul li > a:hover::before,
+#floating-menu > ul li:hover > a::before {
+  border-left: 4px solid rgba(0, 0, 0, 0.25);
+}
+/* THE SUBMENUS */
+#floating-menu > ul ul {
+  position: absolute;
+  left: 85%;
+  top: -9999px;
+  padding-left: 10px;
+  opacity: 0;
+  width: 190px;
+  /* The fade effect, created using an opacity transition */
+  -webkit-transition: opacity 0.3s ease-in;
+  -moz-transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
+}
+#floating-menu > ul ul li a {
+  font-size: 12px;
+}
+/* Showing the submenu when the user is hovering the parent link */
+#floating-menu > ul li:hover > ul {
+  top: 0px;
+  opacity: 1;
+  z-index: 1;
+}
+
+/* REVEAL MODAL */ 	
+.tips-modal{
+  background-repeat:no-repeat;
+  background-position:right top;
+  height: 400px;}
+
+.bottom {
+  	position: absolute; bottom: 6px; left: 6px;
+}
+
+/* ORBIT EXTENDED*/
+.orbit-container .orbit-slides-container > * .orbit-cover {      
+	width: 600px;
+    height: 600px;
+    width: auto\9; /* ie8 */
+    position: absolute;
+    bottom: 0;
+    display: block;
+    left: 28%;
+    min-width: 800px
+}
+
+.feedback {
+    position:fixed;
+    right:20px;
+    bottom:10px;
+    width: 100px;        
+    height: 50px;
+    float: left;
+	z-index: 999;
+	text-align: center;
+	padding-top:1.6em;
+	background-color: rgba(255, 255, 255, 0.5);
+	background: url(icons/feedback_blue.gif) 40px 6px no-repeat rgba(255, 255, 255, 0.4);
+}
+
+.feedback a {
+  width: 100px;
+  height: 50px;
+  margin-top: 30px;
+  display:inline-block;
+  line-height: 14px;
+}
+
+.feedback:hover {
+  background-color: rgba(255, 255, 255, 0.7); 
+}
+
+.itemContainer2{
+	position: relative;
+}
+
+a.itemPic{
+  position:relative;
+  display:block;
+}
+
+.newItem{
+  	position: absolute;
+	width: 61px;
+	height: 61px;
+	top:0;
+	right: 10px;
+	background: url(icons/new.png) no-repeat;
+}
+
+.myAccordion {
+   margin: 1px; 
+   cursor: pointer;   
+ }
+ 
+div.draw {
+    display: block;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+ }
+  
+.pointerArrowRight{
+	background: url(icons/arrow_right.png) no-repeat 0px 3px;
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+  }
+  
+.pointerArrowDown{
+	background: url(icons/arrow_down.png) no-repeat 0px 4px;
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+  }
+  
+li.drawContent {
+        margin-left: 4px;
+        margin-right: 2px;
+        color: black;
+        font-weight: lighter;
+        font-size:0.8em;
+  }
+  
+.imgZoomIn {
+	position: relative;
+	display: block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: transparent url(icons/zoomPlus.gif) no-repeat 0 0;
+}
+  
+.imgZoomOut {
+    position: absolute;
+	display: block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: transparent url(icons/zoomMinus.gif) no-repeat 0 0;
+}
+
+.outer {
+    text-align: justify;
+}
+.outer span {
+    display: inline-block;
+    vertical-align: center;
+}
+.outer .fix {
+    width: 100px;
+    height: 0;
+    display: inline-block;
+}
+
+
+.zoom{
+	overflow:hidden;
+    width: 460px;
+    height: 460px;
+    clear:both;
+}
+
+.zoom .ui-state-disabled {
+    opacity: 1;
+    filter: none;
+}
+
+ .imgPrint {
+    position: absolute;
+	display: block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: transparent url(icons/print.png) no-repeat 0 0;
+}
+
+ .imgMail {
+    position: absolute;
+	display: block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: transparent url(icons/mail.png) no-repeat 0 0;
+}
+
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+
+.go-top {
+    position: fixed;
+    bottom: 300px;
+    right: 0px;
+    text-decoration: none;
+    color: #2ba6cb;
+    background-color: rgba(235, 235, 235, 0.80);
+    padding: 1em;
+    display: none;
+}
+
+.go-top:hover {    
+    background-color: rgba(135, 135, 135, 0.50);
+}
+
+.tableCartDetail{
+	width:100%;
+	border: none;
+}
+
+table .col_right{
+	text-align:right;
+}
+
+table .col_left{
+	text-align:left;
+}
+
+table .itemTotal{
+	width: 120px;
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+table .itemName{
+	color: black;
+	font-weight: bold;
+	text-transform: lowercase;
+	line-height: 1;
+}
+
+table .itemId{
+	color: rgb(126, 126, 126);
+	line-height: 1;
+}
+
+table .itemPhoto{
+	width: 130px;	
+}
+
+.pad_top_20{
+	padding-top: 20px;
+}
+
+.pad_top_7{
+	padding-top: 7px;
+}
+
+.itemPrice{
+	width: 120px;
+	font-size: 0.8em;
+}
+
+.itemQty{
+	width: 140px;
+	font-size: 0.8em;
+}
+
+input.productQty{
+	height: 44px;
+	font-size: 1em;
+}
+
+.tableRow {
+    height:auto;
+}
+
+table.lineItems tr td{ 
+	border-top: 1px solid #d9d9d9; 
+}
+
+table .tableRowTop {
+	float: left;
+	height: 55px;
+	position: relative;
+	width: 100%;
+}
+
+table .tableRowBottom {
+    
+	float: left;
+	height: auto;
+	min-height: 75px;
+	padding: 10px 0 15px;
+	width: 100%;
+}
+
+table .availability{
+	clear: none;
+	color: #666;
+	float: left;
+	margin: 0 3px 0 0;
+	width: auto;
+	font: 12px/14px Helvetica,Arial,sans-serif;
+	font-weight: bold;
+}
+
+.showRoomImageWrap{
+	width: 270px;
+	height: 270px;
+}
+
+
+.col_100{
+	width: 100px;
+}
+
+.col_200{
+	width: 200px;
+}
+
+.itemTotalAdd{
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+.itemSubTotalAdd{
+	font-size: 0.8em;
+	font-weight: bold;
+	color: rgb(126, 126, 126);
+}
+
+td { 
+	padding: 0; 
+}
+
+table { 
+	border-collapse: collapse; 
+}
+
+
+/*  FOOTER  */
+
+#footwrap {
+	cursor: default!important;
+	display: block;
+	float: left;
+	clear: both;
+	background: #666;
+	width: 100%;
+	font-family: "Helvetica", Helvetica, "Helvetica Neue", Arial, sans-serif;
+}
+
+#footer {
+	width: 1000px;
+	margin: 10px auto 40px;
+}
+
+#normalFooter {
+	padding-top: 20px;
+}
+
+#normalFooterTopLeft {
+	width: 325px;
+	float: left;
+}
+
+#footer ul li.title span, #footer .title {
+	color: #ff9!important;
+	font-size: 14px;
+}
+
+#footer #normalFooterTopRight {
+	width: 635px;
+	float: right;
+}
+
+#footer .footerMainLinks {
+	height: 40px;
+	border-bottom: 1px solid #888;
+}
+
+#footer .footerMainLinks li:last-child {
+	margin-right: 0;
+}
+
+#footer .footerMainLinks li {
+	color: #fff;
+	font-family: "Helvetica", Helvetica, "Helvetica Neue", Arial, sans-serif;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: bold;
+	margin-right: 65px;
+}
+
+#footer ul li {
+	display: block;
+	clear: both;
+	font-size: 11px;
+	margin-left: 0;
+	padding: 0;
+}
+
+#footer ul {
+	list-style-type: none;
+	margin: 0 0 15px 0;
+	float: left;
+	clear: left;
+	width: 100%;
+}
+
+#footer .footerCol a {
+	font-size: 12px;
+}
+#footer ul li a {
+	color: #fff;
+}
+
+#footer .footerCol1 {
+	width: 220px;
+	text-transform: lowercase;
+}
+
+#footer .footerCol {
+	height: 210px;
+	float: left;
+}
+
+#footer .footerCol2 {
+	width: 215px;
+}
+
+#footer .footerCol3 {
+	width: 170px;
+}
+
+#footer .footerCol {
+	height: 210px;
+	float: left;
+}
+
+#footer #normalFooterBottom {
+	width: 100%;
+	border-top: 1px solid #888;
+	padding-top: 20px;
+}
+
+#footer .dropUp, #footer .dropUp a.dropUpLink {
+	width: 130px;
+	height: 25px;
+	margin-right: 10px;
+	float: left;
+	display: block;
+	background: #999 no-repeat;
+	position: relative;
+	border-radius: 5px;
+}
+
+#footer .dropUp_arrow {
+	width: 15px;
+	height: 20px;
+	display: block;
+	background: url("icons/grey_left_arrow.png") 5px 2px no-repeat #999;
+	float: right;
+	margin-right: 5px;
+	margin-top: 5px;
+}
+
+#footer .dropUpMenu {
+	display: none;
+	background: #eee;
+	width: 130px;
+	padding: 13px 0;
+	z-index: 99;
+}
+
+#footer .dropUp li {
+	width: 100%;
+	font-size: 13px;
+	overflow: hidden;
+}
+
+#footer .footerTerms {
+	margin-left: 74px;
+	float: left;
+}
+
+#footer .footerTerms ul li {
+	border-left: 1px solid #888;
+	display: inline;
+	padding: 0 10px;
+}
+
+#footer .footerTerms ul .privacyPolicy {
+	border-left: none;
+}
+
+#footer .fbLike {
+	float: left;
+	color: #fff;
+	margin-left: 143px;
+	margin-right: 10px;
+}
+
+#normalFooterTop ul li {
+	line-height: 1.5;
+	font-weight: bold;
+}
+
+#footer .capuy_logo {
+	background: url("icons/capuy-logo.png") 14px 4px no-repeat #999;
+	width: 100px;
+	height: 22px;
+	float: left;
+	display: block;
+	margin-left: 5px;
+}
+
+#footer .boconcept_logo {
+	background: url("icons/boconcept-logo.png") 10px 4px no-repeat #999;
+	width: 100px;
+	height: 22px;
+	float: left;
+	display: block;
+	margin-left: 5px;
+}
+
+#footer ul li span {
+	color: #fff;
+}
+
+#homeMessage{
+	padding-bottom: 10px;
+	font-family: "Helvetica", Helvetica, "Helvetica Neue", Arial, sans-serif;
+}
+
+form, fieldset {
+	display: inline;
+}
+
+fieldset {
+	border: 0;
+	float: left;
+	width: 100%;
+	padding: 0;
+}
+
+#footer .footerEmailMessage {
+	background: url("icons/footer_email_message.jpg") 1px 1px no-repeat;
+	height: 119px;
+	width: 281px;
+	margin-bottom: 7px;
+}
+
+#footer #newsletterMail {
+	border: none;
+	font-family: "Helvetica", Helvetica, "Helvetica Neue", Arial, sans-serif;
+	box-shadow: none;
+	color: #666;
+	font-weight: bold;
+	height: 30px;
+	width: 220px;
+	float: left;
+	margin: 0;
+}
+
+a.emailSubmit, a.emailSubmit:link, a.emailSubmit:active, a.emailSubmit:visited {
+	display: block;
+		background: url(icons/button_left_arrow.png) 10px 7px no-repeat #000000;
+	float: left;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+	clear: none;
+	height: 30px;
+	margin: 0;
+	text-indent: -10000px;
+	width: 30px;
+	padding: 0;
+}
+
+.validation {
+	display: none;
+	padding: 5px;
+}
+
+.hidden {
+	display: none!important;
+}
+
+.emailFormContainer{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+#footer .emailOptIn #lblPromoMsgText, #footer .emailOptIn #promoSuccess, #footer .emailOptIn #emailExists {
+	font: bold 12px Helvetica,Arial,sans-serif;
+	width: 210px;
+	color: #bebebe;
+}
+
+#footer .emailOptIn .spnPromoMsgText {
+	font: bold 12px Helvetica,Arial,sans-serif;
+	color: #7f7f7f;
+	margin: 0 0 20px 0;
+	width: 210px;
+	display: block;
+}
+
+#footer .emailOptIn #lblPromoMsgText, #footer .emailOptIn #promoSuccess, #footer .emailOptIn #emailExists {
+	font: bold 12px Helvetica,Arial,sans-serif;
+	width: 210px;
+	color: #bebebe;
+}
+
+/* HEADER */
+#header{
+	width: 600px;
+}
+
+.headerRightBox {
+	float: right;
+	margin-top: 2px;
+	width: 330px;
+	height: 80px;
+	background: #fff;
+}
+
+.headerRightBoxTop {
+	float: left;
+	height: 30px;
+	position: relative;
+	width: 100%;
+	margin-bottom: 6px;
+}
+
+.headerRightBoxBottom {
+    
+	float: left;
+	height: 20px;
+	width: 100%;
+}
+
+.headerSearch {
+ 	width: 330px;
+}
+
+#searchtext{
+	font-family: "Helvetica", Helvetica, "Helvetica Neue", Arial, sans-serif;
+	box-shadow: none;
+	color: #666;
+	font-weight: bold;
+	height: 30px;
+	width: 300px;
+	float: left;
+	margin: 0;
+}
+
+#header .searchButton {
+	width: 30px;
+	height: 30px;
+	color: #999;
+	font-size: 15px;
+	display: block;
+	background: url(icons/magnifier.png) 5px 6px no-repeat #000;
+	float: left;
+	border-radius: 0 5px 5px 0;
+	
+	margin: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+.abs_LogoMain {
+	background: url(icons/abstracta.png) 0px 0px no-repeat #fff;
+	width: 600px;
+	height: 80px;
+	position: absolute;
+	display: block;
+	float: left
+}
+
+.cart {
+	background: url(icons/cart2.png) 0px 0px no-repeat #fff;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	display: block;
+	float: left;
+}
+
+ .headerCheckout {
+    padding-left: 10px;
+ 	padding-bottom: 20px;
+ 	margin-right: 14px;
+}
+ 
+.headerWrapper{
+  margin: 0 auto;
+  padding: 0;
+  text-align: left;
+  width: 1000px;
+  color: black;
+ }
+ 
+#socialPost {
+  margin-left: 40px;
+  float: left;
+} 
+ 
+ #headerWrap {
+	margin: 0 auto;
+	width: 1000px;
+	height: 82px;
+	padding-top: 10px;
+	padding-bottom: 0;
+	zoom: 1
+}
+
+#header .searchForm {
+	float: right;
+	width: 440px;
+	margin-top: 20px
+}
+
+.checkOut{
+	width: 90px;
+	height: 26px;
+	background: url(icons/button_left_arrow.png) 75px 5px no-repeat #000000;
+	font-size: 15px;
+	display: block;
+	font-weight: bold;
+	background-color: #000;
+	float: right;
+	border-radius: 5px 5px 5px 5px;
+	
+	vertical-align: middle;
+	line-height: 26px;  
+
+	margin-left: 10px;
+    border: 0;
+    cursor: pointer;
+}
+
+.checkOutLink{
+	color: #fff;
+	margin-left: 5px;
+}
+
+.checkOutLink:hover{
+	color: #fff;
+}
+
+/*FIN*/
+
+
+#costumerServiceParagraph{
+	text-align: justify;
+	font: bold 12px Helvetica,Arial,sans-serif;		
+}
+
+
+#costumerServiceParagraph p{
+	margin: 16px;
+}
+
+#architectInfo, #architectInfo p{
+	text-align: justify;
+	font: bold 12px Helvetica,Arial,sans-serif;	
+}
+
+#architectInfo li{
+	margin-left: 20px;
+}
+
+#architectInfoRight{
+	text-align: justify;
+	font: 12px Helvetica,Arial,sans-serif;
+	line-height: 1.9;	
+}
+
+#architectInfoRight .image{
+	margin-bottom: 10px;
+}
+
+#architectInfoRight .mail{
+	text-align: center;
+	font: bold 12px Helvetica,Arial,sans-serif;
+	color: #2ba6cb;
+}
+
+#architectInfoRight .downloadApplication{
+	font: bold 14px Helvetica,Arial,sans-serif;
+	margin-top: 20px;
+}
+
+ span.architectCard{
+	background: url(icons/architect_card.png) 0px 30px no-repeat;
+	width: 300px;
+	height: 100px;
+	color: red;
+	display: block;
+	padding-bottom: 240px;
+}
+
+ span.smallConditions{
+	font: 10px Helvetica,Arial,sans-serif;
+}
+
+#programTerms{
+	margin-top: 10px;
+	text-align: justify;
+	font: 12px Helvetica,Arial,sans-serif;
+}
+
+#programTerms li{
+	margin-left: 20px;
+}
+
+.pricing-table .justified-bullet-item {
+    background-color: white;
+    padding: 0.9375em;
+    text-align: justify;
+    color: #333333;
+    font-size: 0.875em;
+    font-weight: normal;
+    border-bottom: dotted 1px #dddddd; 
+}
+    
+    
+    /* Showing the account menu */
+#accountMenu{
+	height: 30px;
+}
+	
+#accountName{
+	width: 100px;
+	height: 30px;
+	white-space: nowrap; 
+	overflow: hidden;        
+	text-overflow: ellipsis;
+}
+	
+#accountMenu:hover > ul{
+	opacity: 1;
+	left: 0px;
+}
+
+#accountMenu > ul {
+	opacity: 0;
+	top: 30px;
+	left: -99999px;
+}
+	
+#accountMenu > ul:hover {
+	opacity: 1;
+	left: 0px;
+}
+	
+#accountMenu li:hover {
+	background-color: #dddddd;  
+}
+	
+#account > ul li a:hover,
+#account > ul li:hover > a {
+  color: #ffffff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  background: black;
+  background: -webkit-linear-gradient(#2c2c2c, grey);
+  background: -moz-linear-gradient(#2c2c2c, grey);
+  background: linear-gradient(#2c2c2c, grey);
+  border-color: transparent;
+}
+
+#loginButton {
+	width: 110px;
+	height: 30px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 15px;
+	display: block;
+	background-color: #000;
+	float: left;
+	border-radius: 5px 5px 5px 5px;
+	margin: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+.sendButton {
+	width: 90px;
+	height: 30px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 15px;
+	display: block;
+	background-color: #000;
+	float: left;
+	border-radius: 5px 5px 5px 5px;
+	margin: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+.simpleBorder {
+	
+    border: 1px solid #dddddd;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+.font09 {
+	font-size: 0.9em;
+}
+
+.formError {
+	font-size: 0.9em;
+	color: red;
+}
+
+.newsletterMsg {
+	display: none;
+	padding: 5px;
+	width: 220px;
+	font: Helvetica,Arial,sans-serif;
+	font-size: 0.7em;
+	font-weight: bold;
+	color: #fff;
+	margin-bottom: 10px;
+	border: 0;
+	float: left;
+	clear: left;
+	line-height: 1.5em;
+}
+
+div.successNewsletter {
+	display: block;
+	position: relative;
+	height: auto;
+	background: #2ba6cb;
+	padding: 5px 10px;
+}
+
+div.errorNewsletter {
+	background: #e55050 url(icons/error-symbol.gif) no-repeat 10px center;
+	padding: 10px 10px 10px 40px;
+	overflow: visible;
+	display: block;
+	position: relative;
+	min-height: 20px;
+}
+
+div.successCheck {
+	background: url(icons/check.png) no-repeat 10px center;
+	padding: 4px 0px 0px 50px;
+	overflow: visible;
+	display: block;
+	min-height: 20px;
+	font-size: 0.9em;
+}
+
+#addedToWishList{
+	display: none;	
+}
+	
+.actionOnCart{
+	text-decoration: underline;
+}
+
+a.moveToCart {
+	display: block;
+	background: #000000;
+	border-radius: 5px 5px 5px 5px;
+	cursor: pointer;
+	clear: none;
+	width: 140px;
+	height: 30px;
+	
+	color: #fff;
+	vertical-align: middle;
+	line-height: 26px;  
+
+	text-align: center;
+    cursor: pointer;
+}
+
+table .col_button{
+	width: 160px;
+	font-size: 0.8em;
+	font-weight: bold;
+	position: relative;
+}
+
+table .wl_RowTopDown {
+	float: left;
+	height: 55px;
+	width: 100%;
+	bottom: 0;
+}
+
+table .wl_itemName{
+	margin-top: 20px;
+	color: black;
+	font-weight: bold;
+	text-transform: lowercase;
+	line-height: 1;
+	font-size: 1.1em;
+}
+
+table .wl_itemPrice{
+	color: #2ba6cb;
+	margin-top: 15px;
+	font-weight: bold;
+	line-height: 1;
+	font-size: 1em;
+}
+
+table .wl_RowBottom {
+    
+	float: left;
+	height: auto;
+	min-height: 50px;
+	padding: 10px 0 15px;
+	width: 100%;
+}
+
+table .addedOn{
+	clear: none;
+	color: #666;
+	float: left;
+	margin-bottom: 10px;
+	width: auto;
+	font: 12px/14px Helvetica,Arial,sans-serif;
+	font-weight: bold;
+}
+
+div.reduceMarginBottom{
+	margin-bottom: -20px;
+}
+
+div.margin100{
+	margin: 20px 120px 50px 120px;
+}
+
+div.resetPasswordMsg{
+	margin-top: 30px;
+	margin-bottom: -40px;
+}
+	

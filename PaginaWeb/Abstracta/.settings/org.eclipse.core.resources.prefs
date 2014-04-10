@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+encoding//src/main/java/com/abc/ws/bean/XxWabClassinfo.java=UTF-8
+encoding//src/main/java/com/abc/ws/bean/XxWabHomepage.java=UTF-8
+encoding//src/main/java/com/abc/ws/bean/XxWabProductinfo.java=UTF-8
+encoding//src/main/java/com/abc/ws/controller/WebServiceHelper.java=UTF-8
+encoding//src/main/java/com/abc/ws/controller/WebServiceHelperService.java=UTF-8
+encoding//src/main/java/com/abc/ws/controller/WebServiceHelperServiceLocator.java=UTF-8
+encoding//src/main/java/com/abc/ws/controller/WebServiceHelperSoapBindingStub.java=UTF-8

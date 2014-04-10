@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory>
+  <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+  <property name="hibernate.connection.url">jdbc:oracle:thin:@192.168.1.1:1521:compiere</property>
+  <property name="hibernate.connection.username">abstractaweb</property>
+  <property name="hibernate.connection.password">abstractaweb</property>
+  <property name="hibernate.default_schema">ABSTRACTAWEB</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+  <property name="hibernate.current_session_context_class">thread</property>
+  <property name="connection.provider_class">org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider</property>
+  <property name="c3p0.acquire_increment">1</property>
+  <property name="c3p0.idle_test_period">100</property>
+  <property name="c3p0.max_size">20</property>
+  <property name="c3p0.max_statements">100</property>
+  <property name="c3p0.min_size">3</property>
+  <property name="c3p0.timeout">100</property>
+  <property name="javax.persistence.validation.mode">none</property>
+  <mapping class="com.abstracta.bean.Cart" resource="com/abstracta/bean/Cart.hbm.xml"/>
+  <mapping class="com.abstracta.bean.CartLine" resource="com/abstracta/bean/CartLine.hbm.xml"/>
+  <mapping class="com.abstracta.bean.Customer" resource="com/abstracta/bean/Customer.hbm.xml"/>
+  <mapping class="com.abstracta.bean.Newsletter" resource="com/abstracta/bean/Newsletter.hbm.xml"/>
+  <mapping class="com.abstracta.bean.WishList" resource="com/abstracta/bean/WishList.hbm.xml"/>
+  <mapping class="com.abstracta.bean.WishListLine" resource="com/abstracta/bean/WishListLine.hbm.xml"/>
+ </session-factory>
+</hibernate-configuration>

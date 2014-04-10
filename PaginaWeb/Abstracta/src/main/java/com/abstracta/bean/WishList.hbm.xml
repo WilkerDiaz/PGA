@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 22/01/2014 12:04:39 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.abstracta.bean.WishList" table="WISH_LIST">
+        <id name="wishListId" type="int">
+            <column name="WISH_LIST_ID" />
+            <generator class="sequence"><param name="sequence">WISHLIST_SEQ</param></generator>
+        </id>
+        <property name="created" type="timestamp">
+            <column name="CREATED" />
+        </property>
+        <property name="customerId" type="int">
+            <column name="CUSTOMER_ID" />
+        </property>
+    </class>
+</hibernate-mapping>

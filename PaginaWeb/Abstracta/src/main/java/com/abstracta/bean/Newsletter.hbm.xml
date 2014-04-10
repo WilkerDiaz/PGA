@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 15/01/2014 11:10:46 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.abstracta.bean.Newsletter" table="NEWSLETTER">
+        <id name="newsletterId" type="int">
+            <column name="NEWSLETTER_ID" not-null="true"/>
+            <generator class="sequence"><param name="sequence">NEWSLETTER_SEQ</param></generator>
+        </id>
+        <property name="email" type="string">
+            <column name="EMAIL" not-null="true"/>
+        </property>
+        <property name="active" type="char">
+            <column name="ACTIVE" not-null="true" default="Y"/>
+        </property>
+        <property name="created" type="timestamp">
+            <column name="CREATED" not-null="true"/>
+        </property>
+        <property name="unsubscribed_date" type="timestamp">
+            <column name="UNSUBSCRIBED_DATE" not-null="false"/>
+        </property>
+    </class>
+</hibernate-mapping>

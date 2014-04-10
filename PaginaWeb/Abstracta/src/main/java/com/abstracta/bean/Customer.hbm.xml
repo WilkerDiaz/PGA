@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 02/12/2013 10:07:40 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.abstracta.bean.Customer" table="CUSTOMER">
+        <id name="customerId" type="integer">
+            <column name="CUSTOMER_ID" precision="38" scale="0" />
+            <generator class="sequence"><param name="sequence">CUSTOMER_SEQ</param></generator>
+        </id>
+        <property name="name" type="string">
+            <column name="NAME" length="30" not-null="true" />
+        </property>
+        <property name="lastname" type="string">
+            <column name="LASTNAME" length="30" not-null="true" />
+        </property>
+        <property name="identityCard" type="string">
+            <column name="IDENTITY_CARD" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="email" type="string">
+            <column name="EMAIL" length="30" not-null="true" />
+        </property>
+        <property name="birthdate" type="date">
+            <column name="BIRTHDATE" length="7" not-null="true" />
+        </property>
+        <property name="username" type="string">
+            <column name="USERNAME" length="20" not-null="true" />
+        </property>
+        <property name="password" type="string">
+            <column name="PASSWORD" length="20" not-null="true" />
+        </property>
+        <property name="created" type="timestamp">
+            <column name="CREATED" length="7" not-null="true" />
+        </property>
+        <property name="phone" type="string">
+            <column name="PHONE" length="30" not-null="false" />
+        </property>
+        <property name="sex" type="string">
+            <column name="SEX" length="1" not-null="true" />
+        </property>
+        <property name="active" type="char">
+            <column name="ACTIVE" not-null="true" default="N"/>
+        </property>
+        
+        <property name="confirmToken" type="string">
+            <column name="CONFIRM_TOKEN" not-null="false"/>
+        </property>
+        <property name="lastLogin" type="timestamp">
+            <column name="LAST_LOGIN" not-null="false"/>
+        </property>
+        <property name="lastIp" type="string">
+            <column name="LAST_IP" not-null="false"/>
+        </property>
+        
+        <property name="passwordResetToken" type="string">
+            <column name="PASSWORD_RESET_TOKEN" not-null="false"/>
+        </property>
+        <property name="passwordResetExp" type="timestamp">
+            <column name="PASSWORD_RESET_EXP" not-null="false"/>
+        </property>
+        
+    </class>
+</hibernate-mapping>

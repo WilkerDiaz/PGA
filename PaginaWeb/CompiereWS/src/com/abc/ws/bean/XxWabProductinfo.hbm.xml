@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 18/10/2013 04:08:51 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.abc.ws.bean.XxWabProductinfo" table="XX_WAB_PRODUCTINFO" schema="COMPIERE">
+        <id name="MProductId" type="long">
+            <column name="M_PRODUCT_ID" precision="10" scale="0" />
+            <generator class="assigned"></generator>
+        </id>
+        <property name="description" type="string">
+            <column name="DESCRIPTION" length="510" />
+        </property>
+        <property name="value" type="string">
+            <column name="VALUE" length="80" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="NAME" length="200" not-null="true" />
+        </property>
+        <property name="classlevel1Id" type="long">
+            <column name="CLASSLEVEL1ID" precision="10" scale="0" not-null="true" />
+        </property>
+        <property name="classlevel2Id" type="long">
+            <column name="CLASSLEVEL2ID" precision="10" scale="0" not-null="true" />
+        </property>
+        <property name="classlevel3Id" type="long">
+            <column name="CLASSLEVEL3ID" precision="10" scale="0" />
+        </property>
+        <property name="finalprice" type="float">
+            <column name="FINALPRICE" precision="2" scale="15" />
+        </property>
+        <property name="originalprice" type="float">
+            <column name="ORIGINALPRICE" precision="2" scale="15" />
+        </property>
+        <property name="promo" type="string">
+            <column name="PROMO" length="1" not-null="true" />
+        </property>
+        <property name="qty" type="long">
+            <column name="QTY" precision="10" scale="0" not-null="true" />
+        </property>
+        <property name="gift" type="string">
+            <column name="GIFT" length="1" not-null="true" />
+        </property>
+        <property name="newproduct" type="string">
+            <column name="NEWPRODUCT" length="1" not-null="true" />
+        </property>
+        <property name="overview" type="string">
+            <column name="OVERVIEW" length="510" not-null="true" />
+        </property>
+        <property name="model" type="string">
+            <column name="MODEL" length="200" not-null="true" />
+        </property>
+        <property name="color" type="string">
+            <column name="COLOR" length="100" not-null="true" />
+        </property>
+        <property name="shape" type="string">
+            <column name="SHAPE" length="100" not-null="true" />
+        </property>
+        <property name="material1" type="string">
+            <column name="MATERIAL1" length="100" not-null="true" />
+        </property>
+        <property name="material2" type="string">
+            <column name="MATERIAL2" length="100" not-null="true" />
+        </property>
+        <property name="weight" type="float">
+            <column name="WEIGHT" precision="2" scale="15" />
+        </property>
+        <property name="width" type="float">
+            <column name="WIDTH" precision="2" scale="15" />
+        </property>
+        <property name="height" type="float">
+            <column name="HEIGHT" precision="2" scale="15" />
+        </property>
+    </class>
+</hibernate-mapping>

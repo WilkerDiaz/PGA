@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+    xmlns:beans="http://www.springframework.org/schema/beans"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    					http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                        http://www.springframework.org/schema/security 
+                        http://www.springframework.org/schema/security/spring-security.xsd
+                        http://www.springframework.org/schema/context 
+           				http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+    <debug />
+
+    <global-method-security pre-post-annotations="enabled" />
+
+    <http pattern="/resources/**" security="none"/>
+    <http pattern="/Logout" security="none"/>
+	<http pattern="/Cuenta/Login" security="none"/>
+	<http pattern="/Cuenta/LoginFallido" security="none"/>
+	<http pattern="/Cuenta/Registrate" security="none"/>
+	<http pattern="/Cuenta/Registrate/" security="none"/>
+	<http pattern="/Cuenta/OlvideMiClave" security="none"/>
+	<http pattern="/Cuenta/OlvideMiClave/" security="none"/>
+	<http pattern="/Cuenta/Confirmar" security="none"/>
+	<http pattern="/Cuenta/RestablecerClave" security="none"/>
+	
+    <http use-expressions="true" auto-config="false" entry-point-ref="loginUrlAuthenticationEntryPoint">
+        
+        <intercept-url pattern="/Pago/**" access="isAuthenticated()"/>
+        <intercept-url pattern="/Cuenta/**" access="isAuthenticated()"/>
+	    <intercept-url pattern="/**" requires-channel="https"/>
+    
+        <logout delete-cookies="BasketID,BasketCnt" logout-success-url="/Cuenta/Login"/>
+        
+        <custom-filter position="FORM_LOGIN_FILTER" ref="customUsernamePasswordAuthenticationFilter"/>
+        
+		<!--
+	    Uncomment to enable X509 client authentication support
+	        <x509 />
+		-->
+	
+        <!-- Uncomment to limit the number of sessions a user can have -->
+        <!--  
+        <session-management invalid-session-url="/timeout.jsp">
+            <concurrency-control max-sessions="1" error-if-maximum-exceeded="true" />
+        </session-management>
+         -->
+    </http>
+    
+    
+    <beans:bean id="loginUrlAuthenticationEntryPoint"
+	class="org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint">
+	 	<beans:property name="loginFormUrl" value="/Cuenta/Login"/>
+	</beans:bean>
+	
+	<beans:bean id="customUsernamePasswordAuthenticationFilter"
+    	 	class="com.abstracta.webstore.service.CustomUsernamePasswordAuthenticationFilter" >
+		 <beans:property name="authenticationManager" ref="authenticationManager"/>
+		 <beans:property name="authenticationFailureHandler" ref="failureHandler"/>
+		 <beans:property name="authenticationSuccessHandler" ref="successHandler"/>
+	</beans:bean>
+	
+	<!-- org.springframework.security.web.authentication.SavedRequestAwareAuthenticationSuccessHandler -->
+	<beans:bean id="successHandler" class="com.abstracta.webstore.service.CustomAuthenticationSuccessHandler">
+		<beans:property name="defaultTargetUrl" value="/Cuenta/"/>	
+	</beans:bean>
+	
+	<beans:bean id="failureHandler" class="org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler">
+	 	<beans:property name="defaultFailureUrl" value="/Cuenta/LoginFallido"/>
+	</beans:bean>
+    
+    
+    <!--
+    Usernames/Passwords are
+        josetrias@gmail.com/koala
+        dianne/emu
+        scott/wombat
+        peter/opal
+   
+    <beans:bean id="encoder" class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
+
+    <authentication-manager>
+        <authentication-provider>
+            <password-encoder ref="encoder"/>
+            <user-service>
+                <user name="josetrias@gmail.com" password="$2a$10$75pBjapg4Nl8Pzd.3JRnUe7PDJmk9qBGwNEJDAlA3V.dEJxcDKn5O" authorities="supervisor, user, teller" />
+                <user name="dianne" password="$2a$04$bCMEyxrdF/7sgfUiUJ6Ose2vh9DAMaVBldS1Bw2fhi1jgutZrr9zm" authorities="user,teller" />
+                <user name="scott" password="$2a$06$eChwvzAu3TSexnC3ynw4LOSw1qiEbtNItNeYv5uI40w1i3paoSfLu" authorities="user" />
+                <user name="peter" password="$2a$04$8.H8bCMROLF4CIgd7IpeQ.tcBXLP5w8iplO0n.kCIkISwrIgX28Ii" authorities="user" />
+            </user-service>
+        </authentication-provider>
+    </authentication-manager>
+    -->
+    
+    <context:component-scan base-package="com.abstracta.webstore" />
+
+
+	<beans:bean id="encoder" class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
+	
+	<authentication-manager alias="authenticationManager">
+	  <authentication-provider user-service-ref="customUserDetailsService">
+	    <!-- <password-encoder hash="plaintext"/> -->
+	    <password-encoder ref="encoder"/>
+	  </authentication-provider>
+	</authentication-manager>
+    
+</beans:beans>

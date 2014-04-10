@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 18/10/2013 04:08:51 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.abc.ws.bean.XxWabClassinfo" table="XX_WAB_CLASSINFO" schema="COMPIERE">
+        <id name="classlevel3Id" type="long">
+            <column name="CLASSLEVEL3ID" precision="10" scale="0" />
+            <generator class="assigned"></generator>
+        </id>
+        <property name="classlevel1Id" type="long">
+            <column name="CLASSLEVEL1ID" precision="10" scale="0" />
+        </property>
+        <property name="classlevel1Name" type="string">
+            <column name="CLASSLEVEL1NAME" length="50" />
+        </property>
+        <property name="classlevel2Id" type="long">
+            <column name="CLASSLEVEL2ID" precision="10" scale="0" />
+        </property>
+        <property name="classlevel2Name" type="string">
+            <column name="CLASSLEVEL2NAME" length="200" />
+        </property>
+        <property name="classlevel3Name" type="string">
+            <column name="CLASSLEVEL3NAME" length="200" />
+        </property>
+    </class>
+</hibernate-mapping>
